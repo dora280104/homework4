@@ -1,0 +1,45 @@
+@import "./font.css";
+
+ul{
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+li{
+    position: relative;
+}
+li:hover> .submenu{
+    display: flex;
+}
+a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 14px 16px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: "Archivo Narrow", sans-serif;
+}
+a:hover{
+    background-color: #5caffd;
+}
+.submenu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+}
+.dropdown{
+    position: absolute;
+    right: -94px;
+    top: 0;
+}
+.submenu .dropdown li:nth-child(even) a {
+    background-color: #5caffd;
+}
+.submenu .dropdown li:nth-child(odd) a {
+    background-color: #7af880;
+}
+.submenu .dropdown li:last-child a {
+    background-color: #fb81ff;
+}
